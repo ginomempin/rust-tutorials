@@ -1,0 +1,55 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "hello_cargo check",
+            "type": "shell",
+            "group": "build",
+            "command": "cargo",
+            "args": [
+                "check"
+                // "--arg1",
+                // "--arg2",
+            ],
+            "options": {
+                "cwd": "hello_cargo"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "never",
+                "focus": false,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "hello_cargo build",
+            "type": "shell",
+            "group": "build",
+            "command": "cargo",
+            "args": [
+                "build",
+                // "--arg1",
+                // "--arg2",
+            ],
+            "options": {
+                "cwd": "hello_cargo"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "never",
+                "focus": false,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        }
+    ]
+}
